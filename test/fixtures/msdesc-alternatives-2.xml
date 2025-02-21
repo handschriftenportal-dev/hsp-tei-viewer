@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI version="5.0" xml:lang="de" xmlns="http://www.tei-c.org/ns/1.0">
+    <text>
+        <body>
+            <msDesc xml:id="___ID___" xml:lang="" type="hsp:description" subtype="medieval"
+                status="intern">
+                <msContents>
+                    <!--
+                        Fixture purposes: 
+                        - oversized content of ref[@type="locus"] | ef[@type="bezwrk[1].6922"] | ref[@type="workTitle"] is handled differently used in TOC labels
+                    -->
+                    <msItem>
+                        <textLang mainLang="de">Abschnittstext in Deutsch</textLang>
+                        <note type="text">
+                            <ref type="locus">At vero</ref>
+                            <ref type="bezwrk[1].6922">eos et</ref>
+                            <ref type="workTitle">accusam et justo sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</ref>
+                            <quote type="incipit">Lorem ipsum dolor sit amet</quote>, consetetur
+                            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</note>
+                        <note type="music">
+                            <ref type="locus">duo</ref>
+                            <ref type="bezwrk[2].6922">dolores</ref>
+                            <ref type="workTitle">et ea sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</ref>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                            sed diam nonumy eirmod tempor invidunt ut labore </note>
+                        <decoNote type="content">
+                            <ref type="locus">Stet clita</ref>
+                            <ref type="bezwrk[3].6922">kasd</ref>
+                            <ref type="workTitle">gubergren sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore</ref>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut labore </decoNote>
+                        <decoNote type="form">Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut labore </decoNote>
+                    </msItem>
+
+                </msContents>
+
+                <!-- Fixture purpose: Fallback TOC label for binding if idno is empty -->
+                <msPart type="binding">
+                    <msIdentifier>
+                        <idno/>
+                    </msIdentifier>
+                </msPart>
+
+                <!-- Fixture purpose: Fallback TOC label for binding if no idno is given -->
+                <msPart type="binding">
+                    <msIdentifier/>
+                </msPart>
+
+                <!-- Fixture purpose: Fallback TOC label for fragment if idno is empty -->
+                <msPart type="fragment">
+                    <msIdentifier>
+                        <idno/>
+                    </msIdentifier>
+                </msPart>
+
+                <!-- Fixture purpose: Fallback TOC label for fragment if no idno is given -->
+                <msPart type="fragment">
+                    <msIdentifier/>
+                </msPart>
+
+                <!-- Fixture purpose: TOC label for booklet uses "msIdentifier/idno" -->
+                <msPart type="booklet">
+                    <msIdentifier>
+                        <idno>Faszikel mit idno</idno>
+                    </msIdentifier>
+                </msPart>
+
+                <!-- Fixture purpose: Fallback TOC label for booklet if idno is empty -->
+                <msPart type="booklet">
+                    <msIdentifier>
+                        <idno/>
+                    </msIdentifier>
+                </msPart>
+
+                <!-- Fixture purpose: Fallback TOC label for booklet if idno is empty -->
+                <msPart type="booklet">
+                    <msIdentifier/>
+                </msPart>
+
+                <!-- Fixture purpose: Only one default TOC label for accMat -->
+                <msPart type="accMat">
+                    <msIdentifier>
+                        <idno>Beigabe mit idno</idno>
+                    </msIdentifier>
+                </msPart>
+            </msDesc>
+        </body>
+    </text>
+</TEI>
